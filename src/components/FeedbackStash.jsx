@@ -12,7 +12,7 @@ const FeedbackStash = ({ feedback }) => {
   return (
     <div className="feedback-stats">
       <h4>{feedback.length} Reviews</h4>
-      <h4>Average Rating : {avgRating ? avgRating : 0}</h4>
+      <h4>Average Rating : {isNaN(avgRating) ? 0 : avgRating}</h4>
     </div>
   );
 };
